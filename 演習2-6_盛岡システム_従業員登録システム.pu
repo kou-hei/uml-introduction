@@ -1,0 +1,11 @@
+@startuml 従業員登録システム
+actor 社員 #000000;line:Black;line.bold;
+actor 人事担当者 #000000;line:Black;line.bold;
+actor 従業員登録システム #DDDDDD;line:Blue;line.bold;
+
+社員 -> 従業員登録システム : 社員情報の参照
+人事担当者 -> 従業員登録システム : 社員情報の登録・修正
+社員 -> 従業員登録システム : 社員情報の修正申請
+従業員登録システム -> 人事担当者 : 社員情報の修正依頼
+
+@enduml
