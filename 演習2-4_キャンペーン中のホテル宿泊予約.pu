@@ -7,6 +7,6 @@ usecase (<u>予約する</u>\nキャンペーン期間中\nキャンペーン価
 usecase キャンペーン as K
 }
 K .> input :<<extend>>
-利用者 --> input :<<extend>>
+利用者 -u-> input :<<extend>>
 input .> (ログインする) : <<include>>
 @enduml
