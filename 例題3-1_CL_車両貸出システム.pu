@@ -1,0 +1,39 @@
+@startuml 車
+' left to right direction
+class "空車リスト" as empty_car {
+- 管理番号:String
+}
+class "車" as car {
+- 管理番号:String
+- 車種:String
+- 駆動方式:String
+- 貸出料金:int
+}
+class "貸出" as rental {
+- 貸出番号:String
+- 管理番号:String
+- 顧客ID:String
+- 予約日:Date
+}
+class "顧客" as customer {
+- 顧客ID :String
+- 名前: String
+- 電話番号:String
+- 郵便番号:String
+- 住所:String
+---
++ setName(氏名:String) void
+}
+class "予約" as reserve {
+- 予約番号:String
+- 管理番号:String
+- 顧客ID:String
+- 予約日:Date
+}
+empty_car "1" o-ri- "*" rental
+empty_car "*" o-down- "*" car
+rental "0..1" -down- "0..1" reserve
+car "1" -ri- "*" reserve
+rental "1" -ri- "1" customer
+reserve "1" -up- "1" customer
+@enduml
