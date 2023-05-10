@@ -1,0 +1,5 @@
+@startuml a
+hide footbox
+actor 利用者
+
+@enduml
