@@ -1,4 +1,4 @@
-@startuml ラーメン
+@startuml 4-1
 hide footbox
 actor 客 as guest
 participant "フロア店員" as clerk

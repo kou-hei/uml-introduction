@@ -1,4 +1,4 @@
-@startuml オブジェクト図
+@startuml 3-4_1
     left to right direction
     object "<u>車一覧:車</u>" as car1{
         車種

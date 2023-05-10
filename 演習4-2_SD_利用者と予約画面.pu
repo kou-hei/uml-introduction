@@ -1,4 +1,4 @@
-@startuml 予約画面
+@startuml 4-2
 hide footbox
 actor 利用者
 
