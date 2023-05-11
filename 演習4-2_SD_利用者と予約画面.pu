@@ -3,9 +3,9 @@ hide footbox
 participant "利用者:ログイン" as login
 participant "：予約画面" as reservation
 activate login
-login ->> reservation: 承認 ()
+login ->> reservation: 承認
 activate reservation
-reservation ->> reservation: 認証 ()
+reservation ->> reservation: 認証 
 activate reservation
 deactivate reservation
 deactivate login
