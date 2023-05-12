@@ -1,8 +1,0 @@
-@startuml 診療記録
-left to right direction
-class 患者{}
-class 医師{}
-class 医局{}
-患者 "*"--"1" 医師
-医局 "1"--"*" 医師:雇用する>
-@enduml
