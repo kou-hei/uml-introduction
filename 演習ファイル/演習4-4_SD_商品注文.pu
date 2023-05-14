@@ -9,10 +9,10 @@ activate a
         a -> boundary
         activate entity
         activate boundary
-        boundary -> entity:商品情報確認()
-        boundary <<-- entity:商品情報取得()
+        boundary -> entity:情報確認()
+        boundary <<-- entity:情報取得()
         deactivate entity
-        boundary -> boundary:商品情報表示(商品情報)
+        boundary -> boundary:情報表示(商品情報)
             activate boundary
             deactivate boundary
         deactivate boundary
