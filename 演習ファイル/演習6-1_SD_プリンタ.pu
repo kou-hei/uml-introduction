@@ -1,0 +1,11 @@
+@startuml プリンタ
+[*] -right-> 待機中
+state c <<choice>>
+state c <<choice>>
+待機中-down-> c : 待機完了
+c -> 印刷中
+c --> 用紙無し
+用紙無し -right-> 処理終了
+印刷中--> 処理終了 : 印刷完了
+処理終了-right-> [*]
+@enduml
