@@ -1,4 +1,4 @@
-@startuml 3-4
+@startuml 3-4-2
     left to right direction
     class 車{
     - 車種:String
