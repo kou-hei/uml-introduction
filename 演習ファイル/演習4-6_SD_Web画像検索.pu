@@ -1,0 +1,25 @@
+@startuml 画像検索
+hide footbox
+skinparam style strictuml
+
+    actor ":ユーザ" as u
+    participant ":<u>ブラウザ</u>" as b
+    participant ":<u>Webサーバー</u>" as w
+    participant ":<u>画像サーバー</u>" as p
+
+    activate u
+        u -> b: リンクボタンを押す
+        activate b
+            b -> w: ファイル名を探す
+            activate w
+                w -> p: ファイル名を検索
+                activate p
+                    p -> p: 画像ファイルを探す
+                    w <<-- p:画像ファイル
+                deactivate p
+                b <<-- w:画像ファイル
+            deactivate w
+            u <<-- b:画像の閲覧
+        deactivate b
+    deactivate u
+@enduml
