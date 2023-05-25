@@ -1,12 +1,12 @@
 @startuml 4-2
 hide footbox
-participant "利用者:ログイン" as login
-participant "：予約画面" as reservation
-activate login
-login ->> reservation: 承認
-activate reservation
-reservation ->> reservation: 認証 
-activate reservation
-deactivate reservation
-deactivate login
+participant "利用者:ログイン" as lo
+participant "：予約画面" as re
+activate lo
+lo ->> re: 承認
+activate re
+re ->> re: 認証 
+activate re
+deactivate re
+deactivate lo
 @enduml
