@@ -2,6 +2,9 @@
 title kare-
 start
 :具材切る;
+note right
+肉、ニンジン、玉ねぎ、ジャガイモ
+end note
 fork
 :具材炒める;
 fork
