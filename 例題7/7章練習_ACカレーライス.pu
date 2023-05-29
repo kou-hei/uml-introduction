@@ -14,7 +14,7 @@ fork again
 :ご飯炊く;
 end fork
 :ルウを入れて煮込む;
-fork
+
 :ご飯にかける;
 stop
 @enduml
