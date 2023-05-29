@@ -1,0 +1,17 @@
+@startuml kare-
+title kare-
+start
+:具材切る;
+fork
+:具材炒める;
+fork
+:煮る;
+end fork
+fork again
+:ご飯炊く;
+end fork
+:ルウを入れて煮込む;
+fork
+:ご飯にかける;
+stop
+@enduml
