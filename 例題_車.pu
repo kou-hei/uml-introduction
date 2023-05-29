@@ -1,0 +1,29 @@
+@startuml 車
+skinparam classAttributeIconSize 0
+class A <<stereotype>> {}
+class B {
+- 属性1:int
+- 属性2:String
+}
+class C {
+---
++ 操作1():void
++ 操作2():String
+}
+class D {
+- 属性1:int
+- 属性2:String
+---
++ 操作1():void
++ 操作2():String
+}
+hide A circle
+hide B circle
+hide C circle
+hide D circle
+@enduml
+▼属性・操作の記述方法
+
+#プラスがパブリック
+#マイナスがプライベート
+
