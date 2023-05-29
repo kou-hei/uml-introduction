@@ -1,0 +1,18 @@
+@startuml 自動販売機
+hide footbox
+Actor 利用者 as guest
+participant ":料金装置" as money
+participant ":ボタン" as button
+participant ":ベンダー装置" as vender
+activate guest
+guest ->money:お金を入れる
+activate money
+money -> button:お金が入ったことを確認
+deactivate button
+guest <<-- button
+guest -> button:ボタンを押す
+button -> vender:ドリンクの種類の信号
+activate vender
+vender -> vender:ドリンクが出る
+guest <<-- vender:ドリンク
+@enduml

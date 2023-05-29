@@ -1,0 +1,15 @@
+@startuml 自動販売機
+left to right direction
+actor 利用者
+actor ベンダー
+rectangle 自動販売機{
+usecase お金を入れる
+usecase ボタンを押す
+usecase 飲み物を取り出す
+}
+利用者 -- お金を入れる
+利用者 -- ボタンを押す
+利用者 -- 飲み物を取り出す
+お金を入れる -- ベンダー
+飲み物を取り出す -- ベンダー
+@enduml
