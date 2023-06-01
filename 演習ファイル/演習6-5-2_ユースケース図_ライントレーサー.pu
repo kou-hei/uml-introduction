@@ -1,0 +1,15 @@
+@startuml ライントレーサー
+    left to right direction 
+    actor 人 as user #DDDDDD;line:Blue;line.bold;
+    actor 光センサー as sencor #DDDDDD;line:DarkRed;line.bold;
+    actor 左右モニター as monitor #DDDDDD;line:YellowGreen;line.bold;
+
+    rectangle ライントレーサーシステム {
+        usecase (ラインの右境界線上を進む) as text1
+    }
+
+    user--text1
+    text1--sencor
+    text1--monitor
+
+@enduml
