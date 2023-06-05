@@ -1,0 +1,22 @@
+@startuml 図7-10
+|客|
+start
+:弁当をレジに持っていく;
+|店員|
+fork
+|客|
+:お金を支払う;
+|店員|
+:会計をする;
+|店員|
+fork again
+if (温めますか) then (Yes)
+    :弁当を温める;
+else (No)
+endif
+:弁当を袋に入れる;    
+end fork
+|客|
+:弁当を持ってコンビニから出る;
+stop
+@enduml
